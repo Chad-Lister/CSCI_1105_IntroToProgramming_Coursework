@@ -1,24 +1,26 @@
-# Project Title
+# Final Project Intro to Programming CSCI 1105
 
 ## Synopsis
-Give an brief overview of project
+This program uses parallel arrays to simulate an external database file.  It then offers the user 3 sorting options and keys the file display to their selection.  Would eventually have a file as input and possibly a write feature as well.
 
 ## Motivation
-Why did you build this
+Primarily for my final project in Intro to Programming (Java).  Used primarily by educators to spot struggling students either through an attendance sort or grade average sort.
 
 ## How to Run
-Explain what files are needed to run and which file to run. It is also helpful to include a screenshot of the program running. Make sure image is in your repository.
-[Image Caption](image.png)
+Final_Project_CSCI_1105 java in src folder is the main program.  Simply run the Java.  File (Array) Sort.png
 
 ## Code Example
-Show a small snippet of the code you are proud of and why.
+External File Simulation Code.
 ```
-Insert Code Here
+		//  File setup.  Field names and values.
+		String [] lastName = {"Flay", "Brown", "Jones", "Peters", "Ash"};
+		String [] firstName = {"Bubba", "Lisa", "Scott", "Doug", "Shay"};
+		double [] attendence = {78, 99, 60, 93, 80};
+		double [] gradeAverage = {68, 99, 89, 75, 45};
 ```
 
 ## Tests
-Describe and show how to run the tests with code examples. State that you are using JUnit4 to test.
+Does not have value returning methods.  Instead it modifies indices to sort the simulated file.
 
 ## Contributors
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-Also list any one who has already contributed to the project.
+Special thanks to Rocky Mazorow for the field key inferred by method call.
