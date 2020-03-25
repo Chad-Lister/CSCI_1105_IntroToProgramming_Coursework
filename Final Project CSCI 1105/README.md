@@ -7,8 +7,8 @@ This program uses parallel arrays to simulate an external database file.  It the
 Primarily for my final project in Intro to Programming (Java).  Used primarily by educators to spot struggling students either through an attendance sort or grade average sort.
 
 ## How to Run
-Final_Project_CSCI_1105 java in src folder is the main program.  Simply run the Java.  File (Array) Sort.png
-
+Final_Project_CSCI_1105 java in src folder is the main program.  Simply run the Java.
+<img src="File (Array) Sort.png" />
 ## Code Example
 External File Simulation Code.
 ```
