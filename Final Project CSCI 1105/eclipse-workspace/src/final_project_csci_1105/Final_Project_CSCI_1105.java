@@ -32,31 +32,35 @@ class final_project_csci_1105 {
 		for (int s = 0; s < lastName.length; s++) {
 			System.out.print("| " + lastName[s] + ", " + firstName[s] + "\t|\t" + attendence[s] + "\t|\t" + gradeAverage[s] + " | \n");
 			}
+		//  Added prompt until exit loop.
+		int sortFilter = 0;
+		while (sortFilter != 4) {
 		
-		//  Prompt for sort option.  Default is last name alphabetically.
-		System.out.println();
-		System.out.println("Sort criteria (1 = by Last Name, 2 = by Attendance Rate, or 3 = by Grade Average) :  ");
-		int sortFilter = input.nextInt();
+			//  Prompt for sort option.  Default is last name alphabetically.
+			System.out.println();
+			System.out.println("Sort criteria (1 = by Last Name, 2 = by Attendance Rate, 3 = by Grade Average or 4 to Exit.) :  ");
+			sortFilter = input.nextInt();
 		
-		//  Use sort filter to key sort array method.
-		if (sortFilter == 2) {
-			sortArray(attendence, lastName, firstName, gradeAverage);
-		}
-		else if (sortFilter == 3) {
-			sortArray(gradeAverage, lastName, firstName, attendence);
-		}
-		else {
-			// Default key.
-			sortAlpha(lastName, firstName, attendence, gradeAverage);
-		}
-		
-		//  Display printed array.
-		System.out.println();
-		System.out.println("Sorted Array (File)");
-		System.out.println("______________________________________________");
-		for (int s = 0; s < lastName.length; s++) {
-			System.out.print("| " + lastName[s] + ", " + firstName[s] + "\t|\t" + attendence[s] + "\t|\t" + gradeAverage[s] + " | \n");
+			//  Use sort filter to key sort array method.
+			if (sortFilter == 2) {
+				sortArray(attendence, lastName, firstName, gradeAverage);
 			}
+			else if (sortFilter == 3) {
+				sortArray(gradeAverage, lastName, firstName, attendence);
+			}
+			else {
+				// Default key.
+				sortAlpha(lastName, firstName, attendence, gradeAverage);
+			}
+		
+			//  Display printed array.
+			System.out.println();
+			System.out.println("Sorted Array (File)");
+			System.out.println("______________________________________________");
+			for (int s = 0; s < lastName.length; s++) {
+				System.out.print("| " + lastName[s] + ", " + firstName[s] + "\t|\t" + attendence[s] + "\t|\t" + gradeAverage[s] + " | \n");
+			}
+		}
 	}
 	
 	/**
